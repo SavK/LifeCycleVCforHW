@@ -12,6 +12,7 @@
 		ADF3405F22743E45005CB5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF3405D22743E45005CB5A2 /* Main.storyboard */; };
 		ADF3406122743E47005CB5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF3406022743E47005CB5A2 /* Assets.xcassets */; };
 		ADF3406422743E47005CB5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF3406222743E47005CB5A2 /* LaunchScreen.storyboard */; };
+		ADF3406C22743F2F005CB5A2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ADF3406B22743F2F005CB5A2 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ADF3406022743E47005CB5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADF3406322743E47005CB5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADF3406522743E47005CB5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF3406B22743F2F005CB5A2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		ADF3404D22743E45005CB5A2 = {
 			isa = PBXGroup;
 			children = (
+				ADF3406B22743F2F005CB5A2 /* .gitignore */,
 				ADF3405822743E45005CB5A2 /* LifeCycleVCforHW */,
 				ADF3405722743E45005CB5A2 /* Products */,
 			);
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF3406C22743F2F005CB5A2 /* .gitignore in Resources */,
 				ADF3406422743E47005CB5A2 /* LaunchScreen.storyboard in Resources */,
 				ADF3406122743E47005CB5A2 /* Assets.xcassets in Resources */,
 				ADF3405F22743E45005CB5A2 /* Main.storyboard in Resources */,
@@ -291,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SavK.LifeCycleVCforHW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SavK.LifeCycleVCforHW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
