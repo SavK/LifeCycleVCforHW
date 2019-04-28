@@ -10,10 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
+    @IBOutlet var allButtons: [UIButton]!
+    @IBOutlet var allTextFeilds: [UITextView]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        for button in self.allButtons {
+            button.layer.cornerRadius = 15
+            button.layer.borderWidth = 1
+            button.layer.borderColor = button.tintColor.cgColor
+        }
+        
+        for textFeild in self.allTextFeilds {
+            textFeild.layer.cornerRadius = 15
+            textFeild.layer.borderWidth = 1
+            textFeild.layer.borderColor = textFeild.tintColor.cgColor
+        }
 
     }
     
