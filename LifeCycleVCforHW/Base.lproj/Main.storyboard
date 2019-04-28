@@ -27,6 +27,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Kh-Zc-J0c">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="452.66666666666669"/>
                                                 <color key="backgroundColor" red="0.49803921569999998" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="textColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" smartDashesType="no"/>
                                             </textView>
@@ -45,6 +46,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="137" height="55"/>
                                                 <color key="backgroundColor" red="0.49803921569999998" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                                <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                                 <state key="normal" title="Clear logs"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8b-vh-DNo">
@@ -123,6 +125,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="452.66666666666669"/>
                                                 <color key="backgroundColor" red="0.53508196517260276" green="0.89019607840000003" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" smartDashesType="no"/>
                                             </textView>
@@ -141,7 +144,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="137" height="55"/>
                                                 <color key="backgroundColor" red="0.53508196519999995" green="0.89019607840000003" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.5607843137254902" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Clear logs"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcd-FP-xru">
@@ -217,10 +220,11 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BJD-HR-8a0">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="452.66666666666669"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QCl-rT-W0b">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QCl-rT-W0b">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="452.66666666666669"/>
                                                 <color key="backgroundColor" red="0.63921568630000003" green="0.42730629280821919" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="0.68220248289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.58188301320000002" green="0.21569153669999999" blue="0.68220248289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" smartDashesType="no"/>
                                             </textView>
@@ -239,14 +243,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="137" height="55"/>
                                                 <color key="backgroundColor" red="0.63921568630000003" green="0.42730629279999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="0.68220248289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Clear logs"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjZ-ou-Bgn">
                                                 <rect key="frame" x="237" y="0.0" width="137" height="55"/>
                                                 <color key="backgroundColor" red="0.63921568630000003" green="0.42730629279999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="0.68220248289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Settings"/>
                                             </button>
                                         </subviews>
@@ -304,6 +308,7 @@
         <!--Tomato-->
         <scene sceneID="vuS-TD-r3l">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfV-i8-xI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Tomato" id="Qr6-Gl-Vlk" customClass="ViewController" customModule="LifeCycleVCforHW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BbN-GM-zzF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -317,8 +322,9 @@
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Fq-Cs-vgg">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="452.66666666666669"/>
-                                                <color key="backgroundColor" red="1" green="0.44658048364109587" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.45685445619999998" blue="0.30874840520000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.72599361230000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.72599361230000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" smartDashesType="no"/>
                                             </textView>
@@ -333,18 +339,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="mUH-m0-ApI">
                                         <rect key="frame" x="0.0" y="482.66666666666663" width="374" height="55"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-9c-xml">
+                                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-9c-xml">
                                                 <rect key="frame" x="0.0" y="0.0" width="137" height="55"/>
                                                 <color key="backgroundColor" red="1" green="0.45685445624383564" blue="0.30874840516438362" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                                <color key="tintColor" red="0.8713077910958904" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.72599361230000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Clear logs"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYi-cH-fSP">
                                                 <rect key="frame" x="237" y="0.0" width="137" height="55"/>
-                                                <color key="backgroundColor" red="1" green="0.44658048360000002" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.45685445619999998" blue="0.30874840520000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                                <color key="tintColor" red="0.87130779110000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.72599361230000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Settings"/>
                                             </button>
                                         </subviews>
@@ -395,7 +401,6 @@
                         <outletCollection property="allTextFeilds" destination="8Fq-Cs-vgg" collectionClass="NSMutableArray" id="rhH-5c-AMb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HfV-i8-xI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1893" y="791"/>
         </scene>
@@ -416,7 +421,8 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Dk-QW-RVd">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="452.66666666666669"/>
                                                 <color key="backgroundColor" red="0.97440463304519653" green="0.83262962102890015" blue="0.25667911767959595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="0.48986670989999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="1" green="0.48986670989999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" smartDashesType="no"/>
                                             </textView>
@@ -435,14 +441,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="137" height="55"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.87835005789999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="0.48986670991917808" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Clear logs"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ma-iB-5cx">
                                                 <rect key="frame" x="237" y="0.0" width="137" height="55"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.87835005789999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="0.48986670989999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Settings"/>
                                             </button>
                                         </subviews>

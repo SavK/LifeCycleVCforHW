@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD28890B22745DBC00E47A31 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD28890A22745DBC00E47A31 /* TabBarController.swift */; };
+		AD28890F2275B3D700E47A31 /* AllViewControllerLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD28890E2275B3D700E47A31 /* AllViewControllerLogs.swift */; };
 		ADF3405A22743E45005CB5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3405922743E45005CB5A2 /* AppDelegate.swift */; };
 		ADF3405C22743E45005CB5A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3405B22743E45005CB5A2 /* ViewController.swift */; };
 		ADF3405F22743E45005CB5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF3405D22743E45005CB5A2 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		AD28890A22745DBC00E47A31 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AD28890E2275B3D700E47A31 /* AllViewControllerLogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewControllerLogs.swift; sourceTree = "<group>"; };
 		ADF3405622743E45005CB5A2 /* LifeCycleVCforHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycleVCforHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF3405922743E45005CB5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF3405B22743E45005CB5A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				ADF3405922743E45005CB5A2 /* AppDelegate.swift */,
 				ADF3405B22743E45005CB5A2 /* ViewController.swift */,
 				AD28890A22745DBC00E47A31 /* TabBarController.swift */,
+				AD28890E2275B3D700E47A31 /* AllViewControllerLogs.swift */,
 				ADF3405D22743E45005CB5A2 /* Main.storyboard */,
 				ADF3406022743E47005CB5A2 /* Assets.xcassets */,
 				ADF3406222743E47005CB5A2 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				AD28890B22745DBC00E47A31 /* TabBarController.swift in Sources */,
 				ADF3405C22743E45005CB5A2 /* ViewController.swift in Sources */,
 				ADF3405A22743E45005CB5A2 /* AppDelegate.swift in Sources */,
+				AD28890F2275B3D700E47A31 /* AllViewControllerLogs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

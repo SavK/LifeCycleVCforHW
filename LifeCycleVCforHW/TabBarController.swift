@@ -19,14 +19,14 @@ class TabBarController: UITabBarController {
     }
     
     override func viewDidLoad() {
-        
+
+//  guard for checking tabbar items (force images extraction)
         guard tabBar.items!.count == tabBarMenu.allCases.count else { return }
+        
         colorImagesForTabBar()
-        // set default color of first tabBarItem
-        self.tabBar.tintColor = view.backgroundColor
     }
     
-    // MARK: Private func for change image of tab bar item
+    // MARK: Private func for change image of tab bar items
     private  func colorImagesForTabBar() {
         
         let tabBar = self.tabBar
