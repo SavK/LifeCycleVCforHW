@@ -12,3 +12,9 @@ class AllViewControllerLogs  {
     static let shared = AllViewControllerLogs()
     var arrayOfLogs = [String]()
 }
+
+class CurrentStatusOfSwitches  {
+    
+    static let shared = CurrentStatusOfSwitches()
+    var statusOfSwitches = [Bool](repeating: true, count: 5)
+}

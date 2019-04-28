@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -48,12 +49,18 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                                 <state key="normal" title="Clear logs"/>
+                                                <connections>
+                                                    <action selector="clearLogsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufy-vy-WlC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8b-vh-DNo">
                                                 <rect key="frame" x="237" y="0.0" width="137" height="55"/>
                                                 <color key="backgroundColor" red="0.49803921569999998" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <state key="normal" title="Settings"/>
+                                                <connections>
+                                                    <segue destination="15d-q5-Zd6" kind="show" id="w1b-53-V9k"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -98,14 +105,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Blue" image="blue" id="uar-Qn-1ax"/>
                     <connections>
-                        <outletCollection property="allTextFeilds" destination="1Kh-Zc-J0c" collectionClass="NSMutableArray" id="tp9-vV-3cJ"/>
                         <outletCollection property="allButtons" destination="Xss-VA-RLL" collectionClass="NSMutableArray" id="ahX-f5-dGP"/>
                         <outletCollection property="allButtons" destination="W8b-vh-DNo" collectionClass="NSMutableArray" id="MlO-qW-qNi"/>
+                        <outletCollection property="allTextViews" destination="1Kh-Zc-J0c" collectionClass="NSMutableArray" id="m81-X7-fRo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1892.753623188406" y="126.5625"/>
+            <point key="canvasLocation" x="1893" y="127"/>
         </scene>
         <!--Green-->
         <scene sceneID="EzN-uP-xBb">
@@ -146,6 +153,9 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" red="0.0" green="0.5607843137254902" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Clear logs"/>
+                                                <connections>
+                                                    <action selector="clearLogsWithSender:" destination="zTF-Td-GOA" eventType="touchUpInside" id="1Dt-ZJ-cxU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcd-FP-xru">
                                                 <rect key="frame" x="237" y="0.0" width="137" height="55"/>
@@ -153,6 +163,9 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Settings"/>
+                                                <connections>
+                                                    <segue destination="15d-q5-Zd6" kind="showDetail" id="Wx2-Bp-JqS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -197,9 +210,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Green" image="green" id="DWq-q0-jJr"/>
                     <connections>
-                        <outletCollection property="allTextFeilds" destination="78q-u5-y4B" collectionClass="NSMutableArray" id="nd4-xM-5NI"/>
                         <outletCollection property="allButtons" destination="gSM-7G-SfX" collectionClass="NSMutableArray" id="R9Z-kk-50k"/>
                         <outletCollection property="allButtons" destination="lcd-FP-xru" collectionClass="NSMutableArray" id="jD5-dm-J2U"/>
+                        <outletCollection property="allTextViews" destination="78q-u5-y4B" collectionClass="NSMutableArray" id="O53-dJ-lUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irC-Q2-Muw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -245,6 +258,9 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="0.68220248289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Clear logs"/>
+                                                <connections>
+                                                    <action selector="clearLogsWithSender:" destination="FnM-zf-EVz" eventType="touchUpInside" id="52m-vw-S1a"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjZ-ou-Bgn">
                                                 <rect key="frame" x="237" y="0.0" width="137" height="55"/>
@@ -252,6 +268,9 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="0.68220248289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Settings"/>
+                                                <connections>
+                                                    <segue destination="15d-q5-Zd6" kind="show" id="hu7-XD-0Db"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -296,9 +315,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Purple" image="purple" id="FWZ-Kf-a1W"/>
                     <connections>
-                        <outletCollection property="allTextFeilds" destination="QCl-rT-W0b" collectionClass="NSMutableArray" id="BsE-bH-cHS"/>
                         <outletCollection property="allButtons" destination="KjZ-ou-Bgn" collectionClass="NSMutableArray" id="fa9-P5-NEe"/>
                         <outletCollection property="allButtons" destination="2fD-N4-4zl" collectionClass="NSMutableArray" id="byo-Z1-qxk"/>
+                        <outletCollection property="allTextViews" destination="QCl-rT-W0b" collectionClass="NSMutableArray" id="xBM-0s-Rt9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lja-Ci-dZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -308,7 +327,6 @@
         <!--Tomato-->
         <scene sceneID="vuS-TD-r3l">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HfV-i8-xI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Tomato" id="Qr6-Gl-Vlk" customClass="ViewController" customModule="LifeCycleVCforHW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BbN-GM-zzF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -345,6 +363,9 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" red="0.72599361230000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Clear logs"/>
+                                                <connections>
+                                                    <action selector="clearLogsWithSender:" destination="Qr6-Gl-Vlk" eventType="touchUpInside" id="Qxu-D8-DZJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYi-cH-fSP">
                                                 <rect key="frame" x="237" y="0.0" width="137" height="55"/>
@@ -352,6 +373,9 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" red="0.72599361230000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Settings"/>
+                                                <connections>
+                                                    <segue destination="15d-q5-Zd6" kind="show" id="zu7-1H-COJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -398,9 +422,10 @@
                     <connections>
                         <outletCollection property="allButtons" destination="HYi-cH-fSP" collectionClass="NSMutableArray" id="7Vt-H2-cSh"/>
                         <outletCollection property="allButtons" destination="yyw-9c-xml" collectionClass="NSMutableArray" id="dFL-bm-Csc"/>
-                        <outletCollection property="allTextFeilds" destination="8Fq-Cs-vgg" collectionClass="NSMutableArray" id="rhH-5c-AMb"/>
+                        <outletCollection property="allTextViews" destination="8Fq-Cs-vgg" collectionClass="NSMutableArray" id="fKN-Ia-lfP"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfV-i8-xI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1893" y="791"/>
         </scene>
@@ -443,6 +468,9 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" red="1" green="0.48986670991917808" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Clear logs"/>
+                                                <connections>
+                                                    <action selector="clearLogsWithSender:" destination="6n8-WP-Ag9" eventType="touchUpInside" id="IoF-lP-g71"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ma-iB-5cx">
                                                 <rect key="frame" x="237" y="0.0" width="137" height="55"/>
@@ -450,6 +478,9 @@
                                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                 <color key="tintColor" red="1" green="0.48986670989999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Settings"/>
+                                                <connections>
+                                                    <segue destination="15d-q5-Zd6" kind="show" id="PO5-JZ-vXN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -494,14 +525,148 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Yellow" image="yellow" id="Oql-ME-YQG"/>
                     <connections>
-                        <outletCollection property="allTextFeilds" destination="5Dk-QW-RVd" collectionClass="NSMutableArray" id="Y0S-6e-sPq"/>
                         <outletCollection property="allButtons" destination="1HQ-eh-hlK" collectionClass="NSMutableArray" id="9sX-oT-aRW"/>
                         <outletCollection property="allButtons" destination="3Ma-iB-5cx" collectionClass="NSMutableArray" id="YTj-nF-GDa"/>
+                        <outletCollection property="allTextViews" destination="5Dk-QW-RVd" collectionClass="NSMutableArray" id="9ma-Ze-aF6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXw-me-0Q3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2699" y="791"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="6GA-ia-lxv">
+            <objects>
+                <viewController id="15d-q5-Zd6" customClass="SettingsViewController" customModule="LifeCycleVCforHW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwl-et-A7M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="geK-W3-oaa">
+                                <rect key="frame" x="20" y="162" width="374" height="195"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h08-hJ-mPN">
+                                        <rect key="frame" x="0.0" y="0.0" width="317" height="195"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect logs from viewDidLoad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieI-cT-JV6">
+                                                <rect key="frame" x="0.0" y="0.0" width="232.66666666666666" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect logs from viewWillAppear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzc-RO-EAj">
+                                                <rect key="frame" x="0.0" y="41" width="252.33333333333334" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect logs from viewDidAppear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAa-tD-bUU">
+                                                <rect key="frame" x="0.0" y="82" width="250.66666666666666" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect logs from viewWillDisappear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-Eo-7Nu">
+                                                <rect key="frame" x="0.0" y="123" width="274.33333333333331" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect logs from viewDidDisappear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX1-cn-Oow">
+                                                <rect key="frame" x="0.0" y="164" width="272.66666666666669" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pJf-XD-R0T">
+                                        <rect key="frame" x="325" y="0.0" width="49" height="195"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPc-Lp-gXd">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-uv-uWN">
+                                                <rect key="frame" x="0.0" y="41" width="51" height="31"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7rI-bL-1sX">
+                                                <rect key="frame" x="0.0" y="82" width="51" height="31"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXl-aM-tA1">
+                                                <rect key="frame" x="0.0" y="123" width="51" height="31"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hf-3o-pEg">
+                                                <rect key="frame" x="0.0" y="164" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pPc-Lp-gXd" firstAttribute="leading" secondItem="pJf-XD-R0T" secondAttribute="leading" id="Uvh-5Z-MVv"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h08-hJ-mPN" firstAttribute="leading" secondItem="geK-W3-oaa" secondAttribute="leading" id="9qI-ry-0c1"/>
+                                    <constraint firstAttribute="trailing" secondItem="pJf-XD-R0T" secondAttribute="trailing" id="CV4-l9-7n6"/>
+                                    <constraint firstAttribute="bottom" secondItem="h08-hJ-mPN" secondAttribute="bottom" id="QTB-dF-Alc"/>
+                                    <constraint firstItem="h08-hJ-mPN" firstAttribute="top" secondItem="geK-W3-oaa" secondAttribute="top" id="bwz-Tq-cFd"/>
+                                    <constraint firstItem="pJf-XD-R0T" firstAttribute="top" secondItem="geK-W3-oaa" secondAttribute="top" id="i4j-sk-3IH"/>
+                                    <constraint firstAttribute="bottom" secondItem="pJf-XD-R0T" secondAttribute="bottom" id="p0g-Hc-iF2"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKK-vI-h9h">
+                                <rect key="frame" x="357" y="70" width="22" height="22"/>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="15d-q5-Zd6" eventType="touchUpInside" id="63K-4p-hOo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-3N-fCA">
+                                <rect key="frame" x="20" y="64" width="40" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="u0N-kG-iJE" kind="unwind" unwindAction="unwindToMainScreenFor:" id="0c7-Qx-VJY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qdu-3N-fCA" firstAttribute="centerY" secondItem="jKK-vI-h9h" secondAttribute="centerY" id="63d-pE-dRB"/>
+                            <constraint firstItem="geK-W3-oaa" firstAttribute="top" secondItem="Qdu-3N-fCA" secondAttribute="bottom" constant="64" id="7le-i3-AeH"/>
+                            <constraint firstItem="kaD-DE-FdW" firstAttribute="trailing" secondItem="geK-W3-oaa" secondAttribute="trailing" constant="20" id="ATy-Kw-w9O"/>
+                            <constraint firstItem="kaD-DE-FdW" firstAttribute="trailing" secondItem="jKK-vI-h9h" secondAttribute="trailing" constant="35" id="aCr-dc-rxa"/>
+                            <constraint firstItem="geK-W3-oaa" firstAttribute="leading" secondItem="kaD-DE-FdW" secondAttribute="leading" constant="20" id="cTx-jd-XxR"/>
+                            <constraint firstItem="Qdu-3N-fCA" firstAttribute="top" secondItem="kaD-DE-FdW" secondAttribute="top" constant="20" id="dzN-tu-GfX"/>
+                            <constraint firstItem="kaD-DE-FdW" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="geK-W3-oaa" secondAttribute="bottom" constant="20" id="l1H-VM-jse"/>
+                            <constraint firstItem="Qdu-3N-fCA" firstAttribute="leading" secondItem="kaD-DE-FdW" secondAttribute="leading" constant="20" id="pAk-8m-GyZ"/>
+                            <constraint firstItem="jKK-vI-h9h" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Qdu-3N-fCA" secondAttribute="trailing" constant="685" id="r9V-IP-fbb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kaD-DE-FdW"/>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="r9V-IP-fbb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="infoButton" destination="jKK-vI-h9h" id="B1i-Vp-75N"/>
+                        <outletCollection property="labelCollection" destination="ieI-cT-JV6" collectionClass="NSMutableArray" id="Ugx-sa-oc3"/>
+                        <outletCollection property="labelCollection" destination="Lzc-RO-EAj" collectionClass="NSMutableArray" id="eJC-5i-GRL"/>
+                        <outletCollection property="labelCollection" destination="eAa-tD-bUU" collectionClass="NSMutableArray" id="ILZ-Vr-dFf"/>
+                        <outletCollection property="labelCollection" destination="iWd-Eo-7Nu" collectionClass="NSMutableArray" id="K1E-b3-va0"/>
+                        <outletCollection property="labelCollection" destination="HX1-cn-Oow" collectionClass="NSMutableArray" id="y6o-4v-5ao"/>
+                        <outletCollection property="buttonCollection" destination="Qdu-3N-fCA" collectionClass="NSMutableArray" id="beP-vr-8iS"/>
+                        <outletCollection property="buttonCollection" destination="jKK-vI-h9h" collectionClass="NSMutableArray" id="5od-aV-lrx"/>
+                        <outletCollection property="switchCollection" destination="pPc-Lp-gXd" collectionClass="NSMutableArray" id="M22-IP-gco"/>
+                        <outletCollection property="switchCollection" destination="Hbn-uv-uWN" collectionClass="NSMutableArray" id="eGh-VZ-Czu"/>
+                        <outletCollection property="switchCollection" destination="7rI-bL-1sX" collectionClass="NSMutableArray" id="BWV-DA-C6e"/>
+                        <outletCollection property="switchCollection" destination="tXl-aM-tA1" collectionClass="NSMutableArray" id="kP9-Xf-39B"/>
+                        <outletCollection property="switchCollection" destination="8hf-3o-pEg" collectionClass="NSMutableArray" id="iUl-Zv-bch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOG-eL-0yv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="u0N-kG-iJE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3752" y="481"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="WTv-7j-Gka">
@@ -533,4 +698,7 @@
         <image name="tomato" width="24" height="24"/>
         <image name="yellow" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PO5-JZ-vXN"/>
+    </inferredMetricsTieBreakers>
 </document>
