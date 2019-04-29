@@ -49,7 +49,12 @@ extension ViewController {
                      line: Int = #line,
                      function: String = #function) {
         
-        let currentValue = ("\(title ?? "nil"): line \(line) of \(function) \(message) at: \(Date.init())")
+        //  date for logs
+        let currentDate = DateFormatter.localizedString(from: Date(),
+                                                        dateStyle: .none,
+                                                        timeStyle: .medium)
+        
+        let currentValue = ("\(currentDate) \(title ?? "nil"):    line \(line) of \(function) \(message)")
         logsOfViewController.arrayOfLogs.append(currentValue)
     }
     //  func print logs
@@ -57,7 +62,8 @@ extension ViewController {
         for textView in allTextViews {
             textView.text = logsOfViewController.arrayOfLogs.joined(separator: "\n")
             
-            let range = NSMakeRange(textView.text.count - 1, 0)
+            // let autoScroll to visible range
+            let range = NSMakeRange(textView.text.count, 0)
             textView.scrollRangeToVisible(range)
         }
     }
