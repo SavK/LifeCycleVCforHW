@@ -17,36 +17,37 @@ class SettingsViewController: UIViewController {
     
     
     let currentStatusOfSwitches = CurrentStatusOfSwitches.shared
+    let logsOfViewController = LogsOfViewController.shared
+    
+//  variable for alert if some of swiches change his status
     var countOfAlert = 0
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         switchFinder(statusOfSwitches: currentStatusOfSwitches.statusOfSwitches)
     }
 }
 
+// MARK: - func for load correct status of switchers
 extension SettingsViewController {
     
     func switchFinder(statusOfSwitches: Array<Bool>) {
         
         let countOfStatus = currentStatusOfSwitches.statusOfSwitches.count - 1
-        
         for index in 0...countOfStatus {
             switchCollection[index].isOn = currentStatusOfSwitches.statusOfSwitches[index]
         }
     }
 }
+
+// MARK: - InfoButton sends alert if some of swiches change his status
 extension SettingsViewController {
     @IBAction func infoButtonPressed(_ sender: UIButton) {
         
         let alert = UIAlertController(title: "Caution!",
-                                      message:
-            """
-If you deselect print from some features on the settings page,
-the logs may stop on some kind of view controller.
-""",
-                                      preferredStyle: .alert)
+                                      message: "If you deselect  some source of logs on the settings page,"
+                                        + " the logs may display incorrectly.", preferredStyle: .alert)
         
         let okAlert = UIAlertAction(title: "I understand", style: .default, handler: nil)
         
@@ -55,6 +56,7 @@ the logs may stop on some kind of view controller.
     }
 }
 
+// MARK: - func for remember last status of switches
 extension SettingsViewController {
     
     func findEnableSwitch() -> Array<Bool> {
@@ -67,6 +69,7 @@ extension SettingsViewController {
     }
 }
 
+// MARK: - func sends alert, if disabeld switch (alert only for first action)
 extension SettingsViewController {
     
     @IBAction func switchPressed(sender: UISwitch!) {
@@ -75,6 +78,23 @@ extension SettingsViewController {
         }
         if countOfAlert == 1 {
             infoButtonPressed(infoButton)
+        }
+    }
+}
+
+// MARK: - back to previuos page and check switches status on correct
+extension SettingsViewController {
+    
+    @IBAction func backButtonPressed(button: UIButton!) {
+//  back to previous page
+        dismiss(animated: true, completion: nil)
+        
+//  check switches status on correct
+        if currentStatusOfSwitches.statusOfSwitches != findEnableSwitch() {
+            currentStatusOfSwitches.statusOfSwitches.removeAll()
+            currentStatusOfSwitches.statusOfSwitches = findEnableSwitch()
+            logsOfViewController.arrayOfLogs.removeAll()
+            logsOfViewController.arrayOfLogs.append("---Changes accepted---")
         }
     }
 }

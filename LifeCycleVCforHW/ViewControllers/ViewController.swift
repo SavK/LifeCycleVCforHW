@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             textView.layer.borderWidth = 1
             textView.layer.borderColor = textView.tintColor.cgColor
         }
-        
+        // test if switch isOn
         if currentStatusOfSwitches.statusOfSwitches[0] == true {
             collectLogs()
             printLogs()
@@ -63,6 +63,7 @@ extension ViewController {
     }
 }
 
+// MARK: - func clear logs if necessary button pressed
 extension ViewController {
     
     @IBAction func clearLogs(sender: UIButton!){
@@ -78,11 +79,13 @@ extension ViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // check array for print last user action if it was
         if logsOfViewController.arrayOfLogs.count != 0  &&
             logsOfViewController.arrayOfLogs.count == 1 {
             printLogs()
         }
         
+        // test if switch isOn
         if currentStatusOfSwitches.statusOfSwitches[1] == true {
             collectLogs()
             printLogs()
@@ -94,6 +97,12 @@ extension ViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        //  check array for print last user action if it was
+        if  logsOfViewController.arrayOfLogs.last == "---Changes accepted---"{
+            printLogs()
+        }
+        
+        // test if switch isOn
         if currentStatusOfSwitches.statusOfSwitches[2] == true {
             collectLogs()
             printLogs()
@@ -103,6 +112,7 @@ extension ViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+        // test if switch isOn
         if currentStatusOfSwitches.statusOfSwitches[3] == true {
             collectLogs()
             printLogs()
@@ -111,6 +121,7 @@ extension ViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+        // test if switch isOn
         if currentStatusOfSwitches.statusOfSwitches[4] == true {
             collectLogs()
             printLogs()
@@ -118,37 +129,26 @@ extension ViewController {
     }
 }
 
+// MARK: - Navigation & Customization
 extension ViewController {
     
     @IBAction override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationViewController = segue.destination as? SettingsViewController else { return }
+        
+        //  customize backgroundColor
         destinationViewController.self.view.backgroundColor = self.view.backgroundColor
+        
+        //  customize labels
         for label in destinationViewController.labelCollection {
             label.textColor = currentColor
         }
-        
+        //  customize buttons
         for button in destinationViewController.buttonCollection {
             button.tintColor = currentColor
         }
-        
+        //  customize switches
         for switcher in destinationViewController.switchCollection {
             switcher.onTintColor = currentColor
-        }
-        
-    }
-    
-    @IBAction func unwindToMainScreen(for unwindSegue: UIStoryboardSegue) {
-        
-        guard let sourceViewController = unwindSegue.source as? SettingsViewController
-            else {return }
- 
-        if currentStatusOfSwitches.statusOfSwitches != sourceViewController.findEnableSwitch() {
-        
-        currentStatusOfSwitches.statusOfSwitches.removeAll()
-        currentStatusOfSwitches.statusOfSwitches = sourceViewController.findEnableSwitch()
-        logsOfViewController.arrayOfLogs.removeAll()
-        logsOfViewController.arrayOfLogs.append("---Changes accepted---")
-        printLogs()
         }
     }
 }

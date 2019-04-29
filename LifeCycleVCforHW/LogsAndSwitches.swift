@@ -6,7 +6,7 @@
 //  Copyright © 2019 Savonevich Konstantin. All rights reserved.
 //
 
-//  Singletone pattern (consists all needable logs)
+//  Singletone pattern (consists all needable logs and status of switches)
 class LogsOfViewController  {
     
     static let shared = LogsOfViewController()
