@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var allButtons: [UIButton]!
     @IBOutlet var allTextViews: [UITextView]!
     
-    let allViewControllerLogs = AllViewControllerLogs.shared
+    let logsOfViewController = LogsOfViewController.shared
     var currentColor: UIColor?
     let currentStatusOfSwitches = CurrentStatusOfSwitches.shared
     
@@ -50,12 +50,12 @@ extension ViewController {
                      function: String = #function) {
         
         let currentValue = ("\(title ?? "nil"): line \(line) of \(function) \(message) at: \(Date.init())")
-        allViewControllerLogs.arrayOfLogs.append(currentValue)
+        logsOfViewController.arrayOfLogs.append(currentValue)
     }
     //  func print logs
     func printLogs() {
         for textView in allTextViews {
-            textView.text = allViewControllerLogs.arrayOfLogs.joined(separator: "\n")
+            textView.text = logsOfViewController.arrayOfLogs.joined(separator: "\n")
             
             let range = NSMakeRange(textView.text.count - 1, 0)
             textView.scrollRangeToVisible(range)
@@ -67,8 +67,8 @@ extension ViewController {
     
     @IBAction func clearLogs(sender: UIButton!){
         
-        allViewControllerLogs.arrayOfLogs.removeAll()
-        allViewControllerLogs.arrayOfLogs.append("---Logs cleared---")
+        logsOfViewController.arrayOfLogs.removeAll()
+        logsOfViewController.arrayOfLogs.append("---Logs cleared---")
         printLogs()
     }
 }
@@ -78,8 +78,8 @@ extension ViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if allViewControllerLogs.arrayOfLogs.count != 0  &&
-            allViewControllerLogs.arrayOfLogs.count == 1 {
+        if logsOfViewController.arrayOfLogs.count != 0  &&
+            logsOfViewController.arrayOfLogs.count == 1 {
             printLogs()
         }
         
@@ -146,8 +146,8 @@ extension ViewController {
         
         currentStatusOfSwitches.statusOfSwitches.removeAll()
         currentStatusOfSwitches.statusOfSwitches = sourceViewController.findEnableSwitch()
-        allViewControllerLogs.arrayOfLogs.removeAll()
-        allViewControllerLogs.arrayOfLogs.append("---Changes accepted---")
+        logsOfViewController.arrayOfLogs.removeAll()
+        logsOfViewController.arrayOfLogs.append("---Changes accepted---")
         printLogs()
         }
     }

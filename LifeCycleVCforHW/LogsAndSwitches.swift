@@ -1,5 +1,5 @@
 //
-//  AllViewControllerLogs.swift
+//  LogsAndSwitches.swift
 //  LifeCycleVCforHW
 //
 //  Created by Savonevich Constantine on 4/28/19.
@@ -7,9 +7,9 @@
 //
 
 //  Singletone pattern (consists all needable logs)
-class AllViewControllerLogs  {
+class LogsOfViewController  {
     
-    static let shared = AllViewControllerLogs()
+    static let shared = LogsOfViewController()
     var arrayOfLogs = [String]()
 }
 

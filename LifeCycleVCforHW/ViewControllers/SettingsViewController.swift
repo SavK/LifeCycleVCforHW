@@ -17,6 +17,7 @@ class SettingsViewController: UIViewController {
     
     
     let currentStatusOfSwitches = CurrentStatusOfSwitches.shared
+    var countOfAlert = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,5 +64,17 @@ extension SettingsViewController {
             currentStatusOfSwitches.statusOfSwitches.append(switcher.isOn)
         }
         return currentStatusOfSwitches.statusOfSwitches
+    }
+}
+
+extension SettingsViewController {
+    
+    @IBAction func switchPressed(sender: UISwitch!) {
+        if !sender.isOn {
+            countOfAlert += 1
+        }
+        if countOfAlert == 1 {
+            infoButtonPressed(infoButton)
+        }
     }
 }

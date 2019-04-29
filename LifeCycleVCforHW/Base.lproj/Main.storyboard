@@ -585,18 +585,33 @@
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPc-Lp-gXd">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchPressedWithSender:" destination="15d-q5-Zd6" eventType="valueChanged" id="Kvj-Fb-avQ"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-uv-uWN">
                                                 <rect key="frame" x="0.0" y="41" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchPressedWithSender:" destination="15d-q5-Zd6" eventType="valueChanged" id="aHH-zz-9tm"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7rI-bL-1sX">
                                                 <rect key="frame" x="0.0" y="82" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchPressedWithSender:" destination="15d-q5-Zd6" eventType="valueChanged" id="rDz-3d-pu7"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXl-aM-tA1">
                                                 <rect key="frame" x="0.0" y="123" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchPressedWithSender:" destination="15d-q5-Zd6" eventType="valueChanged" id="E5W-Ld-5Cy"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hf-3o-pEg">
                                                 <rect key="frame" x="0.0" y="164" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchPressedWithSender:" destination="15d-q5-Zd6" eventType="valueChanged" id="oWh-aV-5GI"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                         <constraints>
