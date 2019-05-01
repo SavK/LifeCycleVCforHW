@@ -10,7 +10,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    enum tabBarMenu: Int, CaseIterable {
+    enum tabBarMenu: CaseIterable {
         case blue
         case green
         case yellow
